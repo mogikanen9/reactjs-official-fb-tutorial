@@ -25,6 +25,7 @@ function Square(props) {
         const squares = this.state.squares.slice();
 
         if (calculateWinner(squares) || squares[i]) {
+          alert("Game over! Refresh page to restrt the game!")
           return;
         }
 
